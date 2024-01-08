@@ -47,7 +47,7 @@ binary_tree_t *dequeue_item_2(binary_tree_t **queue_h,
 	binary_tree_t *tmp1;
 	binary_tree_t *node = NULL;
 
-		if ((queue_h != NULL) && (queue_t != NULL))
+if ((queue_h != NULL) && (queue_t != NULL))
 	{
 tmp0 = *queue_h;
 		if (tmp0 != NULL)
