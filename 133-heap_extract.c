@@ -190,7 +190,7 @@ int heap_extract(heap_t **root)
 				val_l = tmp->left != NULL ? tmp->left->n : tmp->n;
 				val_r = tmp->right != NULL ? tmp->right->n : tmp->n;
 				dummy = val_l > val_r ? tmp->left : tmp->right;
-			if ((dummy != NULL) && (dummy->n > dummy->parent->n))
+				if ((dummy != NULL) && (dummy->n > dummy->parent->n))
 					swap_tree_node_with_parent_1(&dummy, root);
 				else
 					break;
