@@ -90,7 +90,7 @@ heap_t *get_insert_position(const heap_t *root)
 		while (n > 0)
 		{
 			current = head;
-if (current->parent != NULL)
+			if (current->parent != NULL)
 			{
 				if (current->parent->left != NULL)
 				{
