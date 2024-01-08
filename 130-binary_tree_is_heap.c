@@ -90,7 +90,7 @@ int binary_tree_is_complete(const binary_tree_t *tree)
 	{
 		is_complete = 1;
 		enqueue_item_2(&queue_head, &queue_tail, &n, (void *)tree);
-		while (n > 0)
+			while (n > 0)
 		{
 current = queue_head;
 			if (current->parent == NULL)
