@@ -27,9 +27,10 @@ void enqueue_item_4(heap_t **queue_h, heap_t **queue_t,
 			(*queue_t)->right = new_node;
 		*queue_t = new_node;
 		if (n != NULL)
-      (*n)++;
+			(*n)++;
 	}
 }
+
 /**
  * dequeue_item_4 - Removes an item from a queue.
  * @queue_h: A pointer to the queue's head.
