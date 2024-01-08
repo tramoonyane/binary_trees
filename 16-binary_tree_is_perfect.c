@@ -38,9 +38,10 @@ size_t depth(const binary_tree_t *tree)
 const binary_tree_t *get_leaf(const binary_tree_t *tree)
 {
 	if (is_leaf(tree) == 1)
-return (tree);
+		return (tree);
 	return (tree->left ? get_leaf(tree->left) : get_leaf(tree->right));
 }
+
 
 /**
  * is_perfect_recursive - Checks if a binary tree is perfect recursively.
