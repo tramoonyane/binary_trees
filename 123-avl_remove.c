@@ -35,7 +35,7 @@ static bst_t *remove_node(bst_t **root, int value)
 																													: &parent->right;
 			if (node->right == NULL && node->left == NULL)
 				*plink = NULL;
-else if (node->right == NULL)
+			else if (node->right == NULL)
 				*plink = node->left, node->left->parent = node->parent;
 			else if (node->left == NULL)
 				*plink = node->right, node->right->parent = node->parent;
